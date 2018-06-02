@@ -24,7 +24,7 @@ RECORD_SECONDS = 5
 WAVE_OUTPUT_FILENAME = "voice.wav"
 FORMAT = pyaudio.paInt16
 CHANNELS = 2
-DEFAULT_CONFIG_FILE = "dejavu.cnf.SAMPLE"
+DEFAULT_CONFIG_FILE = "dejavu.cnf"
 
 app = QtGui.QApplication([])
 
