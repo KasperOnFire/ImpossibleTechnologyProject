@@ -30,8 +30,11 @@ Full List of all dependencies, if something should fail:
 apt:
 
 ```bash
-Python3
-MySql
+python3
+mysql-server 
+python3-mysql.connector 
+python3-pip 
+python3-tk
 portaudio19-dev
 ffmpeg
 ```
