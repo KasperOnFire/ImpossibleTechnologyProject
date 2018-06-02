@@ -14,12 +14,9 @@ We will make the changes to the dejavu project that makes it more efficient - Ch
 
 ### Installation
 
-Windows (Requires Git Bash or other Bash terminal):
+We recommend running the project on a local MySQL Database. Create a database, and a user with permissions for that Database, and put in your settings in dejavu.cnf
 
-```bash
-git clone https://github.com/kasperonfire/ImpossibleTechnologyProject && cd ImpossibleTechnologyProject
-```
-
+Currently only supported on
 Linux/Mac:
 
 ```bash
@@ -29,9 +26,30 @@ chmod +x DejavuSetup.sh
 ./DejavuSetup.sh
 ```
 
-### Usage
+Full List of all dependencies, if something should fail:
+apt:
 
-We recommend running the project on a local MySQL Database. Create a database, and a user with permissions for that Database, and put in your settings in dejavu.cnf
+```bash
+Python3
+MySql
+portaudio19-dev
+ffmpeg
+```
+
+Python libraries:
+
+```bash
+numpy
+pydub
+wavio
+matplotlib
+scipy
+pyaudio
+pyqtgraph
+youtube-dl
+```
+
+### Usage
 
 To Download a song to learn directory:
 

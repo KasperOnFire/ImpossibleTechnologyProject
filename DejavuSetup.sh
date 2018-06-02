@@ -9,7 +9,7 @@ read -p "Are you sure? Y/N " -n 1 -r
 echo    #
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-        git clone https://github.com/KasperOnFire/ImpossibleTechnology.git
+        git clone https://github.com/KasperOnFire/ImpossibleTechnologyProject.git
         apt update
         apt install -y git mysql-server python3-mysql.connector python3-pip python3-tk portaudio19-dev ffmpeg
         mysql_secure_installation
