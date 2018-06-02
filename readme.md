@@ -76,6 +76,6 @@ python dejavu/visualize_pyqtgraph.py
 
 [Dejavu audio fingerprinting](https://github.com/worldveil/dejavu)
 
-[Article abous dejavu](http://willdrevo.com/fingerprinting-and-audio-recognition-with-python/)
+[Article about dejavu](http://willdrevo.com/fingerprinting-and-audio-recognition-with-python/)
 
 [youtube-dl](https://rg3.github.io/youtube-dl/)
