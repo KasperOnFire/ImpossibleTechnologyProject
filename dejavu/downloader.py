@@ -23,6 +23,15 @@ ydl_opts = {
 }
 
 
+# Renames a file from format "artist - title.ext" to  "artist-name--title-name.ext", so it matches dejavus current pattern
+def parse_title(file_name):
+    words = file_name.split("-")
+    artist = words[0].replace(" ", "-")
+    title = words[1].replace(" ", "-")
+    title_format = artist + title
+    return title_format
+
+
 def download(link):
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
         #Download the file with the given options
@@ -32,12 +41,3 @@ def download(link):
         latest_file = max(list_of_files, key=os.path.getctime)
         # rename folder according to dejavu file names
         os.replace(latest_file, parse_title(latest_file))
-
-
-# Renames a file from format "artist - title.ext" to  "artist-name--title-name.ext", so it matches dejavus current pattern
-def parse_title(file_name):
-    words = file_name.split("-")
-    artist = words[0].replace(" ", "-")
-    title = words[1].replace(" ", "-")
-    title_format = artist + title
-    return title_format
