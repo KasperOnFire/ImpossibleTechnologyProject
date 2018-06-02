@@ -14,19 +14,25 @@ We will make the changes to the dejavu project that makes it more efficient - Ch
 
 ### Installation
 
-Windows:
 
-```cmd
+Windows (Requires Git Bash or other Bash terminal):
 
+```bash
+git clone https://github.com/kasperonfire/ImpossibleTechnologyProject && cd ImpossibleTechnologyProject
 ```
 
 Linux/Mac:
 
 ```bash
-
+git clone https://github.com/kasperonfire/ImpossibleTechnologyProject
+cd ImpossibleTechnologyProject
+chmod +x DejavuSetup.sh
+./DejavuSetup.exe
 ```
 
 ### Usage
+
+We recommend running the project on a local MySQL Database. Create a database, and a user with permissions for that Database, and put in your settings in dejavu.cnf
 
 ### Resources
 
