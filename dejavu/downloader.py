@@ -6,8 +6,6 @@ import glob
 
 # Run this file with python downloader.py youtube.com/YourLinkHere, or import in other python file and run with downloader.download(link)
 
-link = sys.argv[1]
-
 # Define the options for youtube downloader. Most important is outtmpl - defines the template for the filename afterwards.
 # Downloads the video as a stream, so it can start converting while still downloading. This means max speed is your net speed.
 ydl_opts = {
