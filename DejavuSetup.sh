@@ -4,7 +4,7 @@ clear
 
 echo "Installation script starting!"
 echo "Running on user: $USER"
-echo "Installing Python, Git, and some python libraries!"
+echo "Installing Python, Git, MySQL, and some python libraries!"
 read -p "Are you sure? Y/N " -n 1 -r
 echo    #
 if [[ $REPLY =~ ^[Yy]$ ]]
@@ -21,6 +21,7 @@ then
         pip install scipy
         pip install pyaudio
         pip install pyqtgraph
+        pip install youtube-dl
 fi
 
 echo "Please setup a database in MySQL and change it in Dejavu dejavu.cnf"

@@ -34,8 +34,9 @@ chmod +x DejavuSetup.sh
 We recommend running the project on a local MySQL Database. Create a database, and a user with permissions for that Database, and put in your settings in dejavu.cnf
 
 To Download a song to learn directory:
+
 ```bash
-python youtube.py "search query - can be one word, or artist + title, or anything"
+python youtube.py -v "search query - can be one word, or artist + title, or anything"
 ```
 
 To Learn the songs in the learn directory:
@@ -49,7 +50,6 @@ To Recognize a song:
 ```bash
 python visualize_pyqtgraph.py
 ```
-
 
 ### Resources
 
