@@ -19,7 +19,7 @@ ydl_opts = {
     'noplaylist':
     True,
     'outtmpl':
-    os.path.join('mp3', '%(title)s.%(ext)s')
+    os.path.join('learn', '%(title)s.%(ext)s')
 }
 
 
@@ -28,7 +28,7 @@ def download(link):
         #Download the file with the given options
         ydl.download([link])
         #find latest file
-        list_of_files = glob.glob(os.path.join('mp3', '*'))
+        list_of_files = glob.glob(os.path.join('learn', '*'))
         latest_file = max(list_of_files, key=os.path.getctime)
         # rename folder according to dejavu file names
         os.replace(latest_file, parse_title(latest_file))
