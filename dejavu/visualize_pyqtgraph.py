@@ -13,7 +13,7 @@ import threading
 import json
 
 
-with open("dejavu.cnf.SAMPLE") as f:
+with open("dejavu.cnf") as f:
     config = json.load(f)
 
 confidence = 0
