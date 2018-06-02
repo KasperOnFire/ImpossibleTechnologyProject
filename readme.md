@@ -54,19 +54,19 @@ youtube-dl
 To Download a song to learn directory:
 
 ```bash
-python youtube.py -v "search query - can be one word, or artist + title, or anything"
+python dejavu/youtube.py -v "search query - can be one word, or artist + title, or anything"
 ```
 
 To Learn the songs in the learn directory:
 
 ```bash
-python learner.py
+python dejavu/learner.py
 ```
 
 To Recognize a song:
 
 ```bash
-python visualize_pyqtgraph.py
+python dejavu/visualize_pyqtgraph.py
 ```
 
 ### Resources
